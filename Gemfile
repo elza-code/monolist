@@ -51,3 +51,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rakuten_web_service'
+
+gem 'dotenv-rails'
+#dotenv-rails を導入すると、.env ファイル内に設定された環境変数を Rails 起動時(rails s か rails c)に、自動読み込みします。
