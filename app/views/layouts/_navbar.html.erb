@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
         <li>
-          %= link_to new_item_path do %>
+          <%= link_to new_item_path do %>
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 アイテムを追加
               <% end %>
@@ -30,7 +30,8 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <%= link_to 'マイページ', users_path(current_user) %>
+              
+              <%= link_to 'マイページ', user_path(current_user) %>
             </li>
             <li role="separator" class="divider"></li>
             <li>

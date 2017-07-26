@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    @items = @user.items.uniq
+    @count_want = @user.want_items.count
   end
 
   def new
@@ -27,3 +29,4 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end
+
