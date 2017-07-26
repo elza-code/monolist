@@ -56,3 +56,7 @@ gem 'rakuten_web_service'
 
 gem 'dotenv-rails'
 #dotenv-rails を導入すると、.env ファイル内に設定された環境変数を Rails 起動時(rails s か rails c)に、自動読み込みします。
+
+group :production do
+  gem 'pg'
+end
